@@ -11,6 +11,9 @@
 # production
 /build
 
+# constand
+src/Constand.js
+
 # misc
 .DS_Store
 .env.local

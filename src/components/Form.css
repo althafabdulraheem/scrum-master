@@ -1,0 +1,71 @@
+.input-field{
+    
+    padding:10px;
+}
+
+input[type='text']
+{
+    /* padding: 15px; */
+    width: 500px;
+    border: none;
+    font-family: 'Poppins';
+    background: black;
+    color: white;
+    font-size: 15px;
+
+}
+
+input[type='text']:focus{
+    outline:none;
+}
+
+select{
+    color: white;
+    border-radius: 10px;
+    border-color: #001aff;
+    background: #080707;
+    border-width: 3px;
+    outline: none;
+    padding: 15px;
+    font-family: 'Poppins';
+}
+
+.btn-submit{
+    width: 87px;
+    height: 54px;
+    background-color: #001AFC;
+    margin-top: 10px;
+    color: white;
+    font-weight: bold;
+    font-weight: bold;
+    border-radius: 7px;
+    outline: none;
+    cursor: pointer;
+    font-family: 'Poppins';
+    border-color: #001aff;
+
+}
+.btn-submit:hover{
+    background-color: white;
+    color:#001aff;
+    border-color: white;
+}
+
+.form-container{
+    display:flex;
+}
+
+.form-wrapper{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.text-field{
+    border-bottom: 3px dotted #001aff;
+    padding: 0;
+    height: 27px;
+    margin-top: 34px;
+
+}
+
