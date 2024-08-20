@@ -27,8 +27,17 @@ const useListActions=()=>{
         }
     }
     
-    const updateTask=()=>{
-    
+    const updateTask=async(id)=>{
+        const response=await axios.put(`${API_URL}scrum/task/${id}`);
+            if(response?.status === 200 && response.data?.status)
+            {
+                console.log(response);
+                toast.success('successfully updated ');
+                
+            }
+            else{
+                toast.error(response?.data?.message)
+            }
     }
 
     return {updateTask,deleteTask}
