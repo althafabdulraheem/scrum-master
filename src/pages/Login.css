@@ -18,6 +18,7 @@ button{
     background: #0024f9;
     font-weight: bolder;
     cursor: pointer;
+    width: 178px;
 
 }
 
@@ -36,4 +37,7 @@ button{
     align-items: center;
     justify-content: center;
     height: 100vh;
+    background-image: url("https://img.freepik.com/free-photo/flat-lay-desk-dark-concept-with-copy-space_23-2148459473.jpg?t=st=1724347985~exp=1724351585~hmac=247ae9adf3247a30004f25d8a81fb31c74762e7c2f0a2a1a10438ca791b561e9&w=740");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
   }
