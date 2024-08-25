@@ -6,14 +6,18 @@ import {API_URL} from '../Constand';
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { Grid } from 'react-loader-spinner'
+import useAuthHook from '../hooks/AuthFunction';
 const Landing=()=>{
 
+    const {checkToken}=useAuthHook()
     const[loader,setLoader]=useState(true)
     const {data}=useContext(Task)
     const {dispatch}=useContext(Task);
     useEffect(()=>{
+        checkToken()  //cheking token exists or not
+
         async function fetch()
-    {
+        {
         try{
             const {data}=await axios.get(API_URL+'scrum/tasks/')
             if(data.status)
@@ -36,7 +40,7 @@ const Landing=()=>{
         fetch();
         
        
-    },[dispatch])
+    },[dispatch,checkToken])
     
    
    

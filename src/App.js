@@ -1,14 +1,9 @@
 import React from 'react'
-import Landing from './pages/Landing';
-import Login from './pages/Login';
-
+import Router from './utils/Router';
 
 function App() {
   return (
-   <>
-   {/* <Landing/> */}
-   <Login/>
-   </>
+   <Router/>
   );
 }
 

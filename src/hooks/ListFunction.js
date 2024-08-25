@@ -31,7 +31,7 @@ const useListActions=()=>{
         const response=await axios.put(`${API_URL}scrum/task/${id}`);
             if(response?.status === 200 && response.data?.status)
             {
-                console.log(response);
+                
                 toast.success('successfully updated ');
                 
             }
